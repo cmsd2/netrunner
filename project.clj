@@ -41,7 +41,8 @@
                  [cond-plus "1.0.1"]
                  [com.taoensso/tempura "1.2.1"]
                  [org.clojure/data.csv "1.0.0"]
-                 [medley "1.3.0"]]
+                 [medley "1.3.0"]
+                 [ch.qos.logback/logback-classic "1.2.3"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]
             [lein-figwheel "0.5.16"]
@@ -54,6 +55,7 @@
                                   [binaryage/devtools "0.9.7"]
                                   [cider/piggieback "0.5.2"]]
                    :plugins [[lein-figwheel "0.5.16"]]
+                   :resource-paths ["src-resources/dev"]
                    :source-paths ["src/clj" "src/cljs" "src/dev" "src/cljc"]}}
 
   :aliases {"fetch" ["run" "-m" "tasks.fetch/command"]
